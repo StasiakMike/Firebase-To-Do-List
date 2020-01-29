@@ -1,0 +1,117 @@
+body{
+    background-image: url(assets/heroimg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Fondamento', cursive;
+}
+
+h1{
+    color: #fff;
+    font-size: 64px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content{
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 20px 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.content li{
+    padding: 20px;
+    background-image: linear-gradient(to right, #b92b27,#1565c0);
+    font-size: 20px;
+    position: relative;
+    height: 46px;
+}
+
+.content li:nth-child(even){
+    padding: 20px;
+    background-image: linear-gradient(to right, #1e9600,#fff200,#ff0000);
+}
+
+li span{
+    display: block;
+}
+
+li span:nth-child(2){
+    font-size: 16px;
+    margin-top: 6px;
+    
+}
+
+li button{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    background: rgba(0,0,0,0.3);
+    width: 60px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight:  bold;
+    cursor:  pointer;
+}
+
+form input, select{
+    background: rgba(0,0,0,0.6);
+    float: left;
+    width: 38%;
+    margin: 0;
+    border: 0;
+    border-bottom: 3px solid #88236f;
+    margin: 0 1%;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+form input:focus{
+    outline: none;
+    border-bottom: 3px solid #88236f;
+    padding-bottom: 8px;
+    transition: all ease 0.2s;
+}
+
+form:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+button{
+    border: 3px solid #88236f;
+    border-radius: 10px;
+    padding: 13px;
+    width: 14%;
+    background: rgba(0,0,0,0.6);
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #999;
+}
+
+.about {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 20px 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+    font-weight: bold;
+    text-align: center;
+}

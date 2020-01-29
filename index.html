@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>My to-do list JS&Firebase</title>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Fondamento&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>My To Do list</h1>
+
+<div class="content">
+
+    <form id="add-task">
+        <input type="text" name="task" id="" placeholder="Add task here">
+        <select name="importance">
+            <option value="ASAP">ASAP</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Very Low">Very Low</option>
+          </select>
+        <button>Add task</button>
+    </form>
+
+    <ul id="tasks-list"></ul>
+
+</div>
+
+<div class="about">
+    <h2>About the project</h2>
+    <ul>
+        <li>This app was created with pure JavaScript and Firebase DB</li>
+        <li>User can add new tasks and remove them</li>
+        <li>Database works in real time mode, all changes are visible immediately</li>
+        <li>All data are stored in database</li>
+        <li>Select list allows choose the importance of task</li>
+        <li>All tasks are displayed in importance order ASAP > very low prioryty</li>
+        <li>Source code for this project at <a href="https://github.com/StasiakMike/Firebase-To-Do-List.git">GitHub</a></li>
+    </ul>
+</div>
+
+<footer>
+    <span>2019 &copy; Mike Stasiak & MvdB Software Solutions</span>
+</footer>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBfnhunTmTAEErXRFKrOGQ4B2-yW2c8y1w",
+    authDomain: "to-do-list-b8b0e.firebaseapp.com",
+    databaseURL: "https://to-do-list-b8b0e.firebaseio.com",
+    projectId: "to-do-list-b8b0e",
+    storageBucket: "to-do-list-b8b0e.appspot.com",
+    messagingSenderId: "625375741981",
+    appId: "1:625375741981:web:252bd33a984352a1ec9ef4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
